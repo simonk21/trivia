@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYMMG Project: Trivia</title>
+    <link rel="stylesheet" href="trivia.css">
+    <script defer src="trivia.js"></script>
+  </head>
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">WYMMG Trivia</h1>
+      <p id="description" class="description text-center">
+        Can you answer all the questions correctly?
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">What is Kama's middle name?</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter Kama's middle name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Where is Kama's beauty spot from your POV?</label>
+        <input
+          type="text"
+          name="beauty"
+          id="beauty"
+          class="form-control"
+          placeholder="Enter 'Left' or 'Right'"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >How old was Kama when she got her license?</label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>What was our first date?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select date option</option>
+          <option value="date1">Eating at Makoto Japanese Buffet</option>
+          <option value="date2">Watching Black Panther at Lloyd Movie Theater</option>
+          <option value="date3">Eating at Mio Sushi</option>
+          <option value="date4">Going ice skating at Lloyd Shopping Mall</option>
+          <option value="date5">Thrifting at Goodwill</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>How much do you love Kama?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="answer1"
+            type="radio"
+            class="input-radio"
+            id='no'
+            checked
+          />Not at all</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="answer2"
+            type="radio"
+            class="input-radio"
+            id='yes'
+          />Just a little bit</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="answer3"
+            type="radio"
+            id='infinite'
+            class="input-radio"
+          />There's no cap to how much I love her</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What song does Kama ask you to sing for her?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="answer1">Yesterday by The Beatles</option>
+          <option value="answer2">God's Plan by Drake</option>
+          <option value="answer3">Piano Man by Billy Joel</option>
+          <option value="answer4">Talking to the Moon by Bruno Mars</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What statements are true?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            id='snowboarding'
+            class="input-checkbox"
+          />We both like snowboarding</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            id='cs'
+            class="input-checkbox"
+          />We both majored in Computer Science</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            id='oyster'
+            class="input-checkbox"
+          />We love eating oysters together</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            id='sing'
+            class="input-checkbox"
+          />Kama loves to sing when we go karaoke</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            id='drive'
+            class="input-checkbox"
+          />Kama is not afraid of driving</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="gitter-help-rooms"
+            type="checkbox"
+            id='black'
+            class="input-checkbox"
+          />We went on a date to watch Black Panther</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            id='anime'
+            class="input-checkbox"
+          />We love watching anime together</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="city-meetups"
+            type="checkbox"
+            class="input-checkbox"
+            id='proj'
+          />We worked on most projects together at University of Portland</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="wiki"
+            type="checkbox"
+            class="input-checkbox"
+            id='kids'
+          />We love kids -- especially our nieces</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="forum"
+            type="checkbox"
+            class="input-checkbox"
+            id='japan'
+          />We can't wait to go Japan together</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additional-courses"
+            type="checkbox"
+            id='career'
+            class="input-checkbox"
+          />Kama's pursuing software engineering, while you're pursuing cybersecurity</label
+        >
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  </html>
+  
